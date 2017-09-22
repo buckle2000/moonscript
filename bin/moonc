@@ -3,7 +3,7 @@
 local alt_getopt = require "alt_getopt"
 local lfs = require "lfs"
 
-local opts, ind = alt_getopt.get_opts(arg, "lvhwt:o:pTXb", {
+local opts, ind = alt_getopt.get_opts(arg, "lvhwt:o:pTXbn", {
 	print = "p", tree = "T", version = "v", help = "h", lint = "l"
 })
 
@@ -259,5 +259,3 @@ else
 		end
 	end
 end
-
-
